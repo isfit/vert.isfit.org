@@ -28,6 +28,8 @@ gem 'spring',        group: :development
 #gems for bootstrap
 gem 'coffee-rails', '~> 4.0.1'
 gem 'bootstrap-sass', '~> 3.2.0'
+# Use boostrap forms
+gem 'bootstrap_form'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'

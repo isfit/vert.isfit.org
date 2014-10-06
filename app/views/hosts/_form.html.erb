@@ -1,16 +1,17 @@
-<%= form_for(@host) do |f| %>
-  <% if @host.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@host.errors.count, "error") %> prohibited this host from being saved:</h2>
-
-      <ul>
-      <% @host.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <div class="actions">
-    <%= f.submit %>
+<div class='row'>
+  <div class='col-md-8 text-center col-md-offset-2'>
+    <%= bootstrap_form_for(@host) do |f| %>
+      <%= f.text_field :firstname %>
+      <%= f.text_field :lastname %>
+      <%= f.text_field :address %>
+      <%= f.number_field :zipcode %>
+      <%= f.text_field :city %>
+      <%= f.text_field :phone %>
+      <%= f.number_field :capacity %>
+      <%= f.text_area :comments %>
+      <%= f.submit "Create" %>
+    <% end %>
   </div>
-<% end %>
+</div>
+
+
