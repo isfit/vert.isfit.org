@@ -1,16 +1,17 @@
 class CreateHosts < ActiveRecord::Migration
   def change
     create_table :hosts do |t|
-      t.timestamps
       #Legges det til id av seg selv?
-      t.firstname :firstname
-      t.lastname :lastname
-      t.address :address
-      t.zipcode :zipcode
-      t.city :city
-      t.phone :phone
-      t.capacity :capacity
-      t.comments :comments
+      t.string  :firstname
+      t.string :lastname
+      t.string :address
+      t.integer :zipcode
+      t.string :city
+      t.string :phone
+      t.integer :capacity
+      t.text :comments
+
+      t.timestamps
     end
   end
 end
