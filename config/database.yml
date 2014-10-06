@@ -1,8 +1,0 @@
-development:
-  adapter: mysql2
-  encoding: utf8
-  host: 127.0.0.1
-  database: isfit15_hosts_dev
-  username: isfit15_annabraa
-  password: 2ynNsE4mtwFqADZp
-  socket: /var/run/mysqld/mysqld.sock
