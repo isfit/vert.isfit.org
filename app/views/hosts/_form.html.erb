@@ -1,16 +1,38 @@
-<%= form_for(@host) do |f| %>
-  <% if @host.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@host.errors.count, "error") %> prohibited this host from being saved:</h2>
-
-      <ul>
-      <% @host.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <div class="actions">
-    <%= f.submit %>
+<div class='row'>
+  <div class='col-md-4'>
+    <!--Blockquotes-->
   </div>
-<% end %>
+  <div class='col-md-4'>
+
+    <%= bootstrap_form_for(@host) do |f| %>
+      <%= f.text_field :firstname, label: "Fornavn" %> 
+      <%= f.text_field :lastname, label: "Etternavn" %>
+      <%= f.text_field :email, label: "Epost" %>
+      <%= f.text_field :address, label: "Adresse" %>
+      <%= f.text_field :zipcode, label: "Postnr" %>
+      <%= f.text_field :city, label: "By" %>
+      <%= f.text_field :phone, label: "Telefonnummer" %>
+
+      <%= f.form_group :beenhost, label: { text: "Har du vært vert før?"  } do %> 
+            <br>
+            <%= f.radio_button :beenhost, false, label: "Nei", checked: true, inline: true %>
+            <%= f.radio_button :beenhost, false, label: "Ja", inline: true %>
+      <% end %>
+      <label class="control-label" for="host_city">Kapasitet</label>
+      <span class="help-block">Fortell oss her hvor mange du har plass til i huset ditt</span>
+      <%= f.number_field :capacity, hide_label: true%>
+     <%= f.form_group :sex, label: { text: "Foretrukket kjønn"  } do %> 
+            <br>
+            <%= f.radio_button :sex, 0, label: "Ingen preferanser", checked: true, inline: true %>
+            <%= f.radio_button :sex, 1, label: "Kvinne", inline: true %>
+            <%= f.radio_button :sex, 2, label: "Mann", inline: true %>
+      <% end %>
+      <label class="control-label" for="host_city">Kommentarer</label>
+      <span class="help-block">Har du lyst til at den du huser skal ha et spesiellt språk eller har du noe annet å opplyse om? Skriv det her!</span>
+      <%= f.text_area :comments, hide_label: true%>
+      <%= f.submit "Create" %>
+    <% end %>
+  </div>
+</div>
+
+

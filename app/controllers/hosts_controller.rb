@@ -10,6 +10,7 @@ class HostsController < ApplicationController
   # GET /hosts/1
   # GET /hosts/1.json
   def show
+    redirect_to root_path if @host.id != session[:id]
   end
 
   # GET /hosts/new
@@ -28,6 +29,7 @@ class HostsController < ApplicationController
 
     respond_to do |format|
       if @host.save
+        session[:id] = @host.id
         format.html { redirect_to @host, notice: 'Host was successfully created.' }
         format.json { render :show, status: :created, location: @host }
       else
@@ -69,6 +71,6 @@ class HostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def host_params
-      params[:host]
+      params.require(:host).permit(:firstname, :lastname, :address, :zipcode, :city, :phone, :capacity, :comments)
     end
 end
