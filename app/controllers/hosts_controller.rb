@@ -10,6 +10,7 @@ class HostsController < ApplicationController
   # GET /hosts/1
   # GET /hosts/1.json
   def show
+    redirect_to root_path if @host.id != session[:id]
   end
 
   # GET /hosts/new
@@ -28,6 +29,7 @@ class HostsController < ApplicationController
 
     respond_to do |format|
       if @host.save
+        session[:id] = @host.id
         format.html { redirect_to @host, notice: 'Host was successfully created.' }
         format.json { render :show, status: :created, location: @host }
       else
