@@ -109,7 +109,7 @@
         <p>Du kan registrere deg helt frem til <span class="special">6. februar</span>. Å være vert er verdt det!</p>
         <p>Har du spørsmål om å være vert?<br>
           Send en e-post til <a href="mailto:verter@isfit.org">verter@isfit.org</a></p>
-          <a class="btn btn-large btn-primary" href="http://www.isfit.org/hosts/new">Registrer deg her</a>
+          <%= link_to "Registrer deg her", new_host_path, class: "btn btn-large btn-primary" %>
       </div>
       <div class="col-md-6">
         <%= image_tag("workshop.jpg",:class => "graphic2")%>
