@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>VertIsfitOrg</title>
+  <title>Bli vert - ISFiT 2015</title>
+   <meta property="og:title" content="Bli vert! - ISFIT 2013"/>
+    <meta property="og:type" content="non_profit"/>
+    <meta property="og:image" content="http://vert.isfit.org/venn.jpg"/>
+    <meta property="og:url" content="http://vert.isfit.org/"/>
+    <meta property="og:site_name" content="ISFiT 2013"/>
+    <meta property="fb:app_id" content="111446192243028"/>
+    <meta property="og:description" content="7. til 17. februar kommer 450 studenter til Trondheim.
+De trenger et sted å bo."/>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
-<%= yield %>
+<body>
+    <%= yield %>
+    <footer id="bottom-footer">
+        <a href="http://isfit.org"><img alt="Isfitliten" class="footer-logo" src="http://i.imgur.com/zobJT.png"></a>
+        <p>
+        Editor in Chief: Synne Mari Pedersen, editor[at]isfit.org. <br>
+        All written material and the ISFiT logo is copyrighted the ISFiT Foundation © 2012. Photos accredited to <a href="http://fg.samfundet.no">Fotogjengen</a>.
+        </p>
+      </footer>
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="dotimeout.min.js"></script>
+    <script src="fitvids.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#infofilm").fitVids();
+        $.doTimeout(500, function() {
+          $("#promo-text").removeClass("hidden").addClass("animated bounceInDown");
+        });
+        
+      })
+    </script>
 
 </body>
 </html>

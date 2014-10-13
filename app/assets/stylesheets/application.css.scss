@@ -1,2 +1,145 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+body {
+        font-family: apertura-condensed, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        background-color: transparent;
+        padding-bottom: 150px;
+      }
+
+      html {
+        height: 100%;
+        background-image: url(http://i.imgur.com/mU7FI.png);
+        background-attachment: fixed;
+      }
+
+.promo {
+        background: url(bakgrunn.jpg) #101010 top no-repeat;
+        height: 790px;
+        width: 100%;
+        color: white;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      h1 a:hover {
+        text-decoration: none;
+      }
+
+      #promo-text {
+        padding-top: 52%;
+        line-height: 2em;
+        font-size: 3em;
+      }
+
+      #promo-text .gray {
+        color: #F7F7F7;
+      }
+
+      .gray {
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, .75)
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        color: white;
+        z-index: 0;
+      }
+
+      #content-wrapper {
+        width: 100%;
+        height: 100%;
+        background: white;
+        z-index: 1;
+        position: relative;
+        box-shadow: 0 0 10px #222;
+        border-bottom-right-radius: 7px;
+        border-bottom-left-radius: 7px;
+        background-color: white;
+        min-width: 1200px;
+      }
+
+      .bigtext h1 {
+        font-size: 3.5em;
+        margin-top: 30%;
+        padding-bottom: 0.5em;
+      }
+
+      .bigtext h2 {
+        font-size: 3.5em;
+        margin-top: 40%;
+        padding-bottom: 0.5em;
+      }
+
+      .bigtext p {
+        font-size: 1.5em;
+        line-height: 1.5em;
+      }
+
+      .graphic {
+        margin-top: 30%;
+      }
+
+      .graphic2 {
+        margin-top: 40%;
+      }
+
+      section {
+        height: 790px;
+      }
+
+      h1.big {
+        font-size: 4em;
+        line-height: 2.5em;
+      }
+      p.big {
+        font-size: 1.8em;
+        line-height: 1.5em;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      #why {
+        background-color: rgba(65,192,240,1.0);
+        color: white;
+      }
+
+      #become {
+        background-color: rgba(251,188,58,1.0);
+        color: #333;
+      }
+      blockquote {
+        margin-top: 20px;
+        margin-bottom:0px;
+      }
+
+      blockquote p {
+        font-size: 20px;
+      }
+
+      blockquote small {
+        color: white;
+        font-size: 16px;
+      }
+
+      img.round {
+        border-radius: 50%;
+      }
+
+      .animated {
+        diplay: block;
+      }
+
+      .bottom {
+        margin-top: 80px;
+      }
+
+   
