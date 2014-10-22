@@ -1,4 +1,30 @@
-<p id="notice"><%= notice %></p>
 
-<%= link_to 'Edit', edit_host_path(@host) %> |
-<%= link_to 'Back', hosts_path %>
+
+<div class="container" id = "content-wrapper">
+  <div class = "col-md-6 bigtext">
+    <p id="notice"><%= notice %></p>
+    <p>Navn: <%= @host.firstname %> <%= @host.lastname %> </p>
+    <p>Epost: <%= @host.email %> </p>
+    <p>Telefonnummer: <%= @host.phone %> </p>
+    <p>Adresse: <%= @host.address %>, <%= @host.zipcode %>, <%= @host.city %></p>
+    <p>Har vært vert:  
+      <% if @host.beenhost %>
+        Ja
+      <% else %>
+        nei
+      <% end %></p>
+    <p>Kapasitet: <%= @host.capacity %> </p>
+    <p>Kjønn:
+      <% if @host.sex = 0 %>
+        Ingen kjønn er foretrukket
+      <% elsif @host.sex == 1 %>
+        Kvinne
+      <% else %> 
+        Mann
+      <% end %></p>
+    <p>Kommentarer: <%= @host.comments %> </p>
+
+    <%= link_to 'Back', hosts_path %>
+
+  </div>
+</div>
