@@ -82,6 +82,19 @@ body {
         min-width: 1200px;
       }
 
+      #content-wrapper-form {
+        width: 50%;
+        height: 100%;
+        background: white;
+        z-index: 1;
+        position: relative;
+        box-shadow: 0 0 10px #222;
+        border-bottom-right-radius: 7px;
+        border-bottom-left-radius: 7px;
+        background-color: white;
+        min-width: 1200px;
+      }
+
       .bigtext h1 {
         font-size: 3.5em;
         margin-top: 30%;

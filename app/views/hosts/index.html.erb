@@ -3,7 +3,7 @@
 <header class="promo">
   <div class="container-fluid">
     <div class="row">
-      <div class="offset4 span8">
+      <div class="col-md-offset-4 col-md-8">
         <h1 id="promo-text" class="hidden">
           <span class="gray">7. til 17. februar kommer 450 studenter til Trondheim.</span><br>
           <span class="gray">De trenger et sted å bo.</span>
@@ -105,7 +105,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 bigtext">
-        <h2><a href="http://www.isfit.org/hosts">Jeg vil bli vert!</a></h2>
+        <!--<h2><a href="http://www.isfit.org/hosts">Jeg vil bli vert!</a></h2>-->
+        <h2><%= link_to "Jeg vil bli vert!", new_host_path %></h2>
         <p>Du kan registrere deg helt frem til <span class="special">6. februar</span>. Å være vert er verdt det!</p>
         <p>Har du spørsmål om å være vert?<br>
           Send en e-post til <a href="mailto:verter@isfit.org">verter@isfit.org</a></p>
