@@ -1,8 +1,6 @@
-<section id ="content-wrapper">
-  <div class='row'>
-    <div class='col-md-4'>
-      <!--Blockquotes-->
-    </div>
+
+  <div class='row newhost'>
+
     <div class='col-md-4'>
 
       <%= bootstrap_form_for(@host) do |f| %>
@@ -32,10 +30,30 @@
       <label class="control-label" for="host_city">Kommentarer</label>
       <span class="help-block">Har du lyst til at den du huser skal ha et spesiellt språk eller har du noe annet å opplyse om? Skriv det her!</span>
       <%= f.text_area :comments, hide_label: true%>
-      <%= f.submit "Create" %>
+      <%= f.submit "Lever inn vertesøknad!" %>
       <% end %>
     </div>
+
+    <div class='col-md-6'>
+      <div data-spy="affix" data-offset-bottom="200">
+        <div class="jumbotron">
+          <h1>Dette må du vite!</h1>
+          <p>Å være vert vil si at man har en deltaker av ISFiT 2015 boende hjemme hos seg selv under festivalen.</p>
+          <p>Dette trenger du for å være vert</p>
+          <ul>
+            <li>En oppreid seng</li>
+            <li>Frokost</li>
+            <li>Godt humør</li>
+          </ul>
+          <p><%= link_to 'Tilbake til forsiden', root_path, class: 'btn btn-default btn-lg' %></p>
+          
+        </div>
+        
+      </div>
+
+       
+    </div>
   </div>
-</section>
+
 
 
