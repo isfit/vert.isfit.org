@@ -1,5 +1,5 @@
 <!--Initializing menygreier???-->
-<div id="content-wrapper">
+<!--
 <header class="promo">
   <div class="container-fluid">
     <div class="row">
@@ -11,7 +11,48 @@
       </div>
     </div>
   </div>
-</header>
+</header>-->
+<div id="content-wrapper">
+<section id="become">
+  <div class="container">
+    <div class="row">
+      <div class = "col-md-9">
+      <div class="col-md-3 bigtext">
+        <!--<h2><a href="http://www.isfit.org/hosts">Jeg vil bli vert!</a></h2>-->
+        <h2><%= link_to "Jeg vil bli vert!", new_host_path %></h2>
+        <p>Du kan registrere deg helt frem til <span class="special">6. februar</span>. Å være vert er verdt det!</p>
+        <p>Har du spørsmål om å være vert?<br>
+          Send en e-post til <a href="mailto:verter@isfit.org">verter@isfit.org</a></p>
+          <%= link_to "Registrer deg her", new_host_path, class: "btn btn-large btn-primary" %>
+      </div>
+      <div class="col-md-6">
+        <%= image_tag("workshop.jpg",:class => "graphic2")%>
+      </div>
+      </div>
+
+
+      <div class= "col-md-3">
+        <div class="sidebar">
+            <nav class="navbar navbar-default navbar-left" role="navigation">
+              <div class="div-sidebar collapse navbar-collapse" id="collapsemenu">
+                <ul class="nav nav-left">
+
+                  <li class="sidebar-link"><a href="yolo"></i>Bli vert</a></li>
+                  <li class="sidebar-link"><a href="yoloto"></i>heihei</a></li>
+
+                
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+
+
+
+
+    </div>
+  </div>
+</section>
 
 <section id="what">
   <div class="container">
@@ -106,23 +147,5 @@
 </section>
 
 
-<section id="become">
-  <div class="container">
-    <div class="row">
-      <div class = "col-md-9">
-      <div class="col-md-3 bigtext">
-        <!--<h2><a href="http://www.isfit.org/hosts">Jeg vil bli vert!</a></h2>-->
-        <h2><%= link_to "Jeg vil bli vert!", new_host_path %></h2>
-        <p>Du kan registrere deg helt frem til <span class="special">6. februar</span>. Å være vert er verdt det!</p>
-        <p>Har du spørsmål om å være vert?<br>
-          Send en e-post til <a href="mailto:verter@isfit.org">verter@isfit.org</a></p>
-          <%= link_to "Registrer deg her", new_host_path, class: "btn btn-large btn-primary" %>
-      </div>
-      <div class="col-md-6">
-        <%= image_tag("workshop.jpg",:class => "graphic2")%>
-      </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 </div> <!-- End content wrapper -->
