@@ -30,7 +30,7 @@ class HostsController < ApplicationController
     respond_to do |format|
       if @host.save
         session[:id] = @host.id
-        format.html { redirect_to @host, notice: 'Din soknad er registrert.' }
+        format.html { redirect_to @host, notice: 'Vi har registrert deg som vert med info:' }
         format.json { render :show, status: :created, location: @host }
       else
         format.html { render :new }
