@@ -7,5 +7,6 @@ class Host < ActiveRecord::Base
   validates :city, presence: true
   validates :phone, presence: true
   validates :capacity, presence: true
+  validates :sleeping, presence: true
 
 end

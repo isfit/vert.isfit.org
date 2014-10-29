@@ -18,9 +18,33 @@
       <%= f.radio_button :beenhost, false, label: "Nei", checked: true, inline: true %>
             <%= f.radio_button :beenhost, true, label: "Ja", inline: true %>
       <% end %>
+
+      <%= f.form_group :isstudent, label: { text: "Er du student?"  } do %> 
+      <br>
+      <%= f.radio_button :isstudent, false, label: "Nei", checked: true, inline: true %>
+            <%= f.radio_button :isstudent, true, label: "Ja", inline: true %>
+      <% end %>
+
+      <%= f.form_group :animales, label: { text: "Har du dyr?"  } do %> 
+      <br>
+      <%= f.radio_button :animales, false, label: "Nei", checked: true, inline: true %>
+            <%= f.radio_button :animales, true, label: "Ja", inline: true %>
+      <% end %>
+
+
       <label class="control-label" for="host_city">Kapasitet</label>
       <span class="help-block">Fortell oss her hvor mange du har plass til i huset ditt</span>
-    <%= f.number_field :capacity, hide_label: true%>
+      <%= f.number_field :capacity, hide_label: true%>
+
+      <%= f.form_group :sleeping, label: { text: "Hvilke overnattingsmuligheter tilbyr du?"  } do %> 
+      <br>
+      <%= f.radio_button :sleeping, 0, label: "Sofa", checked: true, inline: true %>
+      <%= f.radio_button :sleeping, 1, label: "Seng", inline: true %>
+      <%= f.radio_button :sleeping, 2, label: "Trenger å låne madrass", inline: true %>
+      <% end %>
+
+
+
       <%= f.form_group :sex, label: { text: "Foretrukket kjønn"  } do %> 
       <br>
       <%= f.radio_button :sex, 0, label: "Ingen preferanser", checked: true, inline: true %>
