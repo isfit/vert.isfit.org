@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141013164143) do
+ActiveRecord::Schema.define(version: 20141029174800) do
 
   create_table "hosts", force: true do |t|
     t.string   "firstname"
@@ -27,6 +27,9 @@ ActiveRecord::Schema.define(version: 20141013164143) do
     t.string   "email"
     t.boolean  "beenhost"
     t.integer  "sex"
+    t.boolean  "isstudent"
+    t.boolean  "animales"
+    t.integer  "sleeping"
   end
 
 end
