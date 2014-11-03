@@ -9,4 +9,7 @@ class Host < ActiveRecord::Base
   validates :capacity, presence: true
   validates :sleeping, presence: true
 
+  def name
+  	"#{firstname} #{lastname}"
+  end
 end

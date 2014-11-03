@@ -32,6 +32,7 @@ class HostsController < ApplicationController
         session[:id] = @host.id
         format.html { redirect_to @host, notice: 'Vi har registrert deg som vert med info:' }
         format.json { render :show, status: :created, location: @host }
+        UserMailer.welcome_email(@host).deliver
       else
         format.html { render :new }
         format.json { render json: @host.errors, status: :unprocessable_entity }

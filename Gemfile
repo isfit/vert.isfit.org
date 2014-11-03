@@ -41,6 +41,7 @@ gem 'capistrano-rails', group: :development
 gem 'capistrano-rvm', group: :development
 gem 'capistrano-bundler', group: :development
 
+gem 'actionmailer', '~> 4.1.6'
 # Use unicorn as the app server
 # gem 'unicorn'
 
