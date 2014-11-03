@@ -14,6 +14,29 @@
       <% else %>
         nei
       <% end %></p>
+
+    <p><b>Er student: </b>  
+      <% if @host.isstudent %>
+        Ja
+      <% else %>
+        nei
+    <% end %></p>
+
+    <p><b>Har dyr: </b>  
+      <% if @host.animales %>
+        Ja
+      <% else %>
+        nei
+    <% end %></p>
+    <p><b>Overnattingsmuligheter:</b>
+      <% if @host.sleeping = 0 %>
+        Sofa
+      <% elsif @host.sex == 1 %>
+        Seng
+      <% else %> 
+        Trenger å låne madrass
+      <% end %></p>
+
     <p><b>Kapasitet: </b><%= @host.capacity %> </p>
     <p><b>Kjønn:</b>
       <% if @host.sex = 0 %>
@@ -24,6 +47,7 @@
         Mann
       <% end %></p>
     <p><b>Kommentarer: </b><%= @host.comments %> </p>
+
     <p><%= link_to 'Tilbake til forsiden', root_path, class: 'btn btn-default btn-lg' %></p>
 
   </div>
