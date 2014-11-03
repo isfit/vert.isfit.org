@@ -12,54 +12,55 @@
     <%= f.text_field :zipcode, label: "Postnr" %>
     <%= f.text_field :city, label: "By" %>
 
-   <%= f.form_group :beenhost, label: { text: "Har du vært vert før?"  } do %> 
-      <br>
-      <%= f.radio_button :beenhost, false, label: "Nei", checked: true, inline: true %>
-            <%= f.radio_button :beenhost, true, label: "Ja", inline: true %>
-      <% end %>
+    <%= f.form_group :beenhost, label: { text: "Har du vært vert før?"  } do %> 
+    <br>
+    <%= f.radio_button :beenhost, false, label: "Nei", checked: true, inline: true %>
+    <%= f.radio_button :beenhost, true, label: "Ja", inline: true %>
+    <% end %>
 
-      <%= f.form_group :isstudent, label: { text: "Er du student?"  } do %> 
-      <br>
-      <%= f.radio_button :isstudent, false, label: "Nei", checked: true, inline: true %>
-            <%= f.radio_button :isstudent, true, label: "Ja", inline: true %>
-      <% end %>
+    <%= f.form_group :isstudent, label: { text: "Er du student?"  } do %> 
+    <br>
+    <%= f.radio_button :isstudent, false, label: "Nei", checked: true, inline: true %>
+    <%= f.radio_button :isstudent, true, label: "Ja", inline: true %>
+    <% end %>
 
-      <%= f.form_group :animales, label: { text: "Har du dyr?"  } do %> 
-      <br>
-      <%= f.radio_button :animales, false, label: "Nei", checked: true, inline: true %>
-            <%= f.radio_button :animales, true, label: "Ja", inline: true %>
-      <% end %>
+    <%= f.form_group :animales, label: { text: "Har du dyr?"  } do %> 
+    <br>
+    <%= f.radio_button :animales, false, label: "Nei", checked: true, inline: true %>
+    <%= f.radio_button :animales, true, label: "Ja", inline: true %>
+    <% end %>
 
     <label class="control-label" for="host_city">Kapasitet</label>
-      <span class="help-block">Fortell oss her hvor mange du har plass til i huset ditt</span>
-      <%= f.number_field :capacity, hide_label: true%>
+    <span class="help-block">Fortell oss her hvor mange du har plass til i huset ditt</span>
+    <%= f.number_field :capacity, hide_label: true%>
 
-      <%= f.form_group :sleeping, label: { text: "Hvilke overnattingsmuligheter tilbyr du?"  } do %> 
-      <br>
-      <%= f.radio_button :sleeping, 0, label: "Sofa", checked: true, inline: true %>
-      <%= f.radio_button :sleeping, 1, label: "Seng", inline: true %>
-      <%= f.radio_button :sleeping, 2, label: "Trenger å låne madrass", inline: true %>
-      <% end %>
+    <%= f.form_group :sleeping, label: { text: "Hvilke overnattingsmuligheter tilbyr du?"  } do %> 
+    <br>
+    <%= f.radio_button :sleeping, 0, label: "Sofa", checked: true, inline: true %>
+    <%= f.radio_button :sleeping, 1, label: "Seng", inline: true %>
+    <%= f.radio_button :sleeping, 2, label: "Trenger å låne madrass", inline: true %>
+    <% end %>
 
 
 
-      <%= f.form_group :sex, label: { text: "Foretrukket kjønn"  } do %> 
-      <br>
-      <%= f.radio_button :sex, 0, label: "Ingen preferanser", checked: true, inline: true %>
-      <%= f.radio_button :sex, 1, label: "Kvinne", inline: true %>
-      <%= f.radio_button :sex, 2, label: "Mann", inline: true %>
-      <% end %>
-      <label class="control-label" for="host_city">Kommentarer</label>
-      <span class="help-block">Har du lyst til at den du huser skal ha et spesiellt språk eller har du noe annet å opplyse om? Skriv det her!</span>
-      <%= f.text_area :comments, hide_label: true%>
-      <%= f.submit "Lever inn vertesøknad!" %>
-      <% end %>
-    </div>
+    <%= f.form_group :sex, label: { text: "Foretrukket kjønn"  } do %> 
+    <br>
+    <%= f.radio_button :sex, 0, label: "Ingen preferanser", checked: true, inline: true %>
+    <%= f.radio_button :sex, 1, label: "Kvinne", inline: true %>
+    <%= f.radio_button :sex, 2, label: "Mann", inline: true %>
+    <% end %>
+    <label class="control-label" for="host_city">Kommentarer</label>
+    <span class="help-block">Har du lyst til at den du huser skal ha et spesiellt språk eller har du noe annet å opplyse om? Skriv det her!</span>
+    <%= f.text_area :comments, hide_label: true%>
+    <%= f.submit "Lever inn vertesøknad!" %>
+    <% end %>
+  </div>
 
   <div class='col-md-8'>
-    <div data-spy="affix" data-offset-bottom="200">
+    <div class="information">
+     <div class ="container">
       <div class="jumbotron">
-        <div class ="container">
+       
         <h1>Dette må du vite</h1>
         <p>Så bra du har lyst til å være vert .Det å være vert vil si at man har en deltaker av den internasjonale studentfestivalen i Trondheim boende hjemme hos seg selv under festivalen, som varer fra 5. feb til 15.feb. Deltakerne får busskort fra oss, så transport trenger du ikke stille med. </p>
         <p>Dette trenger du for å være vert:</p>
@@ -72,14 +73,14 @@
         <p>Det er bindende påmelding og man får informasjon nærmere festivalen.<br>
           Hvis du har noen spørsmål så er det bare å ta kontakt på verter@isfit.org</p>
           <p><%= link_to 'Tilbake til forsiden', root_path, class: 'btn btn-default btn-lg' %></p>
-          </div>
         </div>
-        
       </div>
-
-
+      
     </div>
+
+
   </div>
+</div>
 
 
 
