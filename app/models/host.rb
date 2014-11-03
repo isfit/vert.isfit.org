@@ -8,4 +8,7 @@ class Host < ActiveRecord::Base
   validates :phone, presence: true
   validates :capacity, presence: true
 
+  def name
+  	"#{firstname} #{lastname}"
+  end
 end

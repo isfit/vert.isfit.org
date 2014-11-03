@@ -1,57 +1,61 @@
 
-  <div class='row newhost'>
+<div class='row newhost'>
 
-    <div class='col-md-4'>
+  <div class='col-md-4'>
 
-      <%= bootstrap_form_for(@host) do |f| %>
-      <%= f.text_field :firstname, label: "Fornavn" %> 
-      <%= f.text_field :lastname, label: "Etternavn" %>
-      <%= f.text_field :email, label: "Epost" %>
-      <%= f.text_field :phone, label: "Telefonnummer" %>
-      <%= f.text_field :address, label: "Adresse" %>
-      <%= f.text_field :zipcode, label: "Postnr" %>
-      <%= f.text_field :city, label: "By" %>
+    <%= bootstrap_form_for(@host) do |f| %>
+    <%= f.text_field :firstname, label: "Fornavn" %> 
+    <%= f.text_field :lastname, label: "Etternavn" %>
+    <%= f.text_field :email, label: "Epost" %>
+    <%= f.text_field :phone, label: "Telefonnummer" %>
+    <%= f.text_field :address, label: "Adresse" %>
+    <%= f.text_field :zipcode, label: "Postnr" %>
+    <%= f.text_field :city, label: "By" %>
 
 
-      <%= f.form_group :beenhost, label: { text: "Har du vært vert før?"  } do %> 
-      <br>
-      <%= f.radio_button :beenhost, false, label: "Nei", checked: true, inline: true %>
-            <%= f.radio_button :beenhost, true, label: "Ja", inline: true %>
-      <% end %>
-      <label class="control-label" for="host_city">Kapasitet</label>
-      <span class="help-block">Fortell oss her hvor mange du har plass til i huset ditt</span>
+    <%= f.form_group :beenhost, label: { text: "Har du vært vert før?"  } do %> 
+    <br>
+    <%= f.radio_button :beenhost, false, label: "Nei", checked: true, inline: true %>
+    <%= f.radio_button :beenhost, true, label: "Ja", inline: true %>
+    <% end %>
+    <label class="control-label" for="host_city">Kapasitet</label>
+    <span class="help-block">Fortell oss her hvor mange du har plass til i huset ditt</span>
     <%= f.number_field :capacity, hide_label: true%>
-      <%= f.form_group :sex, label: { text: "Foretrukket kjønn"  } do %> 
-      <br>
-      <%= f.radio_button :sex, 0, label: "Ingen preferanser", checked: true, inline: true %>
-      <%= f.radio_button :sex, 1, label: "Kvinne", inline: true %>
-      <%= f.radio_button :sex, 2, label: "Mann", inline: true %>
-      <% end %>
-      <label class="control-label" for="host_city">Kommentarer</label>
-      <span class="help-block">Har du lyst til at den du huser skal ha et spesiellt språk eller har du noe annet å opplyse om? Skriv det her!</span>
-      <%= f.text_area :comments, hide_label: true%>
-      <%= f.submit "Lever inn vertesøknad!" %>
-      <% end %>
-    </div>
+    <%= f.form_group :sex, label: { text: "Foretrukket kjønn"  } do %> 
+    <br>
+    <%= f.radio_button :sex, 0, label: "Ingen preferanser", checked: true, inline: true %>
+    <%= f.radio_button :sex, 1, label: "Kvinne", inline: true %>
+    <%= f.radio_button :sex, 2, label: "Mann", inline: true %>
+    <% end %>
+    <label class="control-label" for="host_city">Kommentarer</label>
+    <span class="help-block">Har du lyst til at den du huser skal ha et spesiellt språk eller har du noe annet å opplyse om? Skriv det her!</span>
+    <%= f.text_area :comments, hide_label: true%>
+    <%= f.submit "Lever inn vertesøknad!" %>
+    <% end %>
+  </div>
 
-    <div class='col-md-6'>
-      <div data-spy="affix" data-offset-bottom="200">
-        <div class="jumbotron">
-          <h1>Dette må du vite!</h1>
-          <p>Å være vert vil si at man har en deltaker av ISFiT 2015 boende hjemme hos seg selv under festivalen.</p>
-          <p>Dette trenger du for å være vert</p>
-          <ul>
-            <li>En oppreid seng</li>
-            <li>Frokost</li>
-            <li>Godt humør</li>
-          </ul>
+  <div class='col-md-8'>
+    <div data-spy="affix" data-offset-bottom="200">
+      <div class="jumbotron">
+        <div class ="container">
+        <h1>Dette må du vite</h1>
+        <p>Så bra du har lyst til å være vert .Det å være vert vil si at man har en deltaker av den internasjonale studentfestivalen i Trondheim boende hjemme hos seg selv under festivalen, som varer fra 5. feb til 15.feb. Deltakerne får busskort fra oss, så transport trenger du ikke stille med. </p>
+        <p>Dette trenger du for å være vert:</p>
+        <ul>
+          <li><h4>En oppreid seng</h4></li>
+          <li><h4>Frokost</h4></li>
+          <li><h4>Middag den 5. februar</h4></li>
+          <li><h4>Godt humør</h4></li>
+        </ul>
+        <p>Det er bindende påmelding og man får informasjon nærmere festivalen.<br>
+          Hvis du har noen spørsmål så er det bare å ta kontakt på verter@isfit.org</p>
           <p><%= link_to 'Tilbake til forsiden', root_path, class: 'btn btn-default btn-lg' %></p>
-          
+          </div>
         </div>
         
       </div>
 
-       
+
     </div>
   </div>
 
