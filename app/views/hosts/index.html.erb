@@ -17,7 +17,7 @@
 <section id="become">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 bigtext">
+      <div class="col-md-3 bigtext">
         <!--<h2><a href="http://www.isfit.org/hosts">Jeg vil bli vert!</a></h2>-->
         <h2><%= link_to "Jeg vil bli vert!", new_host_path %></h2>
         <p>Du kan registrere deg helt frem til <span class="special">6. februar</span>. Å være vert er verdt det!</p>
@@ -32,23 +32,6 @@
   </div>
 </section>
 
-  <div class="container">
-      <div class= "col-md-3">
-        <div class="sidebar">
-            <nav class="navbar navbar-default navbar-left" role="navigation">
-              <div class="div-sidebar collapse navbar-collapse" id="collapsemenu">
-                <ul class="nav nav-left">
-
-                  <li class="sidebar-link"><a href="yolo"></i>Bli vert</a></li>
-                  <li class="sidebar-link"><a href="yoloto"></i>heihei</a></li>
-
-                
-                </ul>
-              </div>
-            </nav>
-          </div>
-    </div>
-  </div>
 
 <section id="what">
   <div class="container">
@@ -79,8 +62,7 @@
 <!--<img src="..." alt="..." class="img-rounded">-->
 <section id="why">
   <div class="container">
-    <div class="col-md-9">
-      <h1 class="big center">
+      <h1 class="big">
         Hvorfor skal jeg bli vert?
       </h1>
       <div class="row">
@@ -110,24 +92,21 @@
         <p>Jeg har hatt personer fra Rwanda, USA, Israel, Tyrkia og fra det tidligere Jugoslavia boende hos meg. Det har alltid vært en artig opplevelse. Man får møte folk fra andre kulturer og høre hva de tenker om sitt hjemland, og ikke minst hva de synes om oss nordmenn.</p>
         <small>Trygve Bragstad, 5. gang ISFiT-vert</small>
       </blockquote>
-   
-    </div>
   </div>
 </section>
 
 <section id="do">
   <div class="container">
-      <div class="col-md-9">
-        <h1 class="big center">
+        <h1 class="big">
           Hva må jeg gjøre?
         </h1>
         <div class="row">
-          <div class="col-md-3 col-md-offset-1">
+          <div class="col-md-3">
             <%= image_tag("seng.png",:class => "round",:size =>"270x270")%>
             <h1 class="center">Seng</h1>
             <p class="center">Alt du trenger er en ekstra seng, sofa eller kun gulvplass, så stiller vi med madrassen(e).</p>
           </div>
-            <div class="col-md-2">
+            <div class="col-md-3">
           </div>
           <div class="col-md-3">
             <%= image_tag("osteskive.png",:class => "round",:size =>"270x270")%>
@@ -135,10 +114,10 @@
             <p class="center">Du stiller med en enkel frokost, vi dekker alle andre måltider.</p>
           </div>
         </div>
-        <div>
+
+        <div class="col-md-9">
           <p class="big center bottom">Deltakerne er opptatt størsteparten av dagen, med workshop på dagtid og kulturprogram på kvelden.</p>
         </div>
-    </div>
   </div>
 </section>
 
