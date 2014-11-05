@@ -8,6 +8,7 @@ class Host < ActiveRecord::Base
   validates :phone, presence: true
   validates :capacity, presence: true
   validates :sleeping, presence: true
+  validates :extraday, presence: true
 
   def name
   	"#{firstname} #{lastname}"
