@@ -8,15 +8,6 @@ Bundler.require(*Rails.groups)
 
 module VertIsfitOrg
   class Application < Rails::Application
-
-
-    ActionMailer::Base.smtp_settings = {
-    :address => "isfit.org",
-    :port => 587,
-    :domain => "isfit.org",
-    :enable_starttls_auto => true,
-    :openssl_verify_mode => 'none'
-    }
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
