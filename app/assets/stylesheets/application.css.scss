@@ -15,196 +15,205 @@
  *= require_self
  */
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
-body {
-        font-family: apertura-condensed, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        background-color: transparent;
-        padding-bottom: 150px;
-      }
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ body {
+  font-family: apertura-condensed, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: transparent;
+  padding-bottom: 150px;
+}
 
-      html {
-        height: 100%;
-        background-image: url(http://i.imgur.com/mU7FI.png);
-        background-attachment: fixed;
-      }
+html {
+  height: 100%;
+  background-image: url(http://i.imgur.com/mU7FI.png);
+  background-attachment: fixed;
+}
 
 .promo {
-        background: url(bakgrunn.jpg) #101010 top no-repeat;
-        height: 790px;
-        width: 100%;
-        color: white;
-      }
+  background: url(bakgrunn.jpg) #101010 top no-repeat;
+  height: 790px;
+  width: 100%;
+  color: white;
+}
 
-      .hidden {
-        display: none;
-      }
+.hidden {
+  display: none;
+}
 
-      h1 a:hover {
-        text-decoration: none;
-      }
+h1 a:hover {
+  text-decoration: none;
+}
 
-      #promo-text {
-        padding-top: 52%;
-        line-height: 2em;
-        font-size: 3em;
-      }
+#promo-text {
+  padding-top: 52%;
+  line-height: 2em;
+  font-size: 3em;
+}
 
-      #promo-text .gray {
-        color: #F7F7F7;
-      }
+#promo-text .gray {
+  color: #F7F7F7;
+}
 
-      .gray {
-        text-shadow: 1px 1px 5px rgba(0, 0, 0, .75)
-      }
+.gray {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, .75)
+}
 
-      footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        color: white;
-        z-index: 0;
-      }
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  z-index: 0;
+}
 
-      #content-wrapper {
-        width: 100%;
-        height: 100%;
-        background: white;
-        z-index: 1;
-        position: relative;
-        box-shadow: 0 0 10px #222;
-        border-bottom-right-radius: 7px;
-        border-bottom-left-radius: 7px;
-        background-color: white;
-        min-width: 1200px;
-      }
+#content-wrapper {
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0 0 10px #222;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color: white;
+  min-width: 1200px;
+}
 
-      #content-wrapper-form {
-        width: 50%;
-        height: 100%;
-        background: white;
-        z-index: 1;
-        position: relative;
-        box-shadow: 0 0 10px #222;
-        border-bottom-right-radius: 7px;
-        border-bottom-left-radius: 7px;
-        background-color: white;
-        min-width: 1200px;
-      }
-      .vert-button{
-        color: #FFF;
-      }
-      .vert-button:visited{
-        color: #FFF;
-      }
-      .btn:visited{
-        color: #FFF;
-      }
-      .vert-button:hover{
-        text-decoration: none;
-        color: #000;
-        background-color: transparent;
-      }
+#content-wrapper-form {
+  width: 50%;
+  height: 100%;
+  background: white;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0 0 10px #222;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color: white;
+  min-width: 1200px;
+}
+.vert-button{
+  color: #FFF;
+}
+.vert-button:visited{
+  color: #FFF;
+}
+.btn:visited{
+  color: #FFF;
+}
+.vert-button:hover{
+  text-decoration: none;
+  color: #000;
+  background-color: transparent;
+}
 
-      .bigtext h1 {
-        font-size: 3.5em;
-        margin-top: 10%;
-        padding-bottom: 0.5em;
-      }
+.bigtext h1 {
+  font-size: 3.5em;
+  margin-top: 10%;
+  padding-bottom: 0.5em;
+}
+.sidebar{
+  position: fixed;
+  right: 0px; 
+}
+.bigtext h2 {
+  font-size: 3.5em;
+  margin-top: 40%;
+  padding-bottom: 0.5em;
+}
 
-      .bigtext h2 {
-        font-size: 3.5em;
-        margin-top: 40%;
-        padding-bottom: 0.5em;
-      }
+.bigtext p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
 
-      .bigtext p {
-        font-size: 1.5em;
-        line-height: 1.5em;
-      }
+.graphic {
+  margin-top: 30%;
+}
 
-      .graphic {
-        margin-top: 30%;
-      }
+.graphic2 {
+  margin-top: 40%;
+}
 
-      .graphic2 {
-        margin-top: 40%;
-      }
+section {
+  height: 790px;
+}
 
-      section {
-        height: 790px;
-      }
+h1.big {
+  font-size: 4em;
+  line-height: 2.5em;
+}
+p.big {
+  font-size: 1.8em;
+  line-height: 1.5em;
+}
 
-      h1.big {
-        font-size: 4em;
-        line-height: 2.5em;
-      }
-      p.big {
-        font-size: 1.8em;
-        line-height: 1.5em;
-      }
+.center {
+  text-align: center;
+}
 
-      .center {
-        text-align: center;
-      }
+#why {
+  background-color: rgba(65,192,240,1.0);
+  color: white;
+}
 
-      #why {
-        background-color: rgba(65,192,240,1.0);
-        color: white;
-      }
+#become {
+  background-color: rgba(251,188,58,1.0);
+  color: #333;
+}
 
-      #become {
-        background-color: rgba(251,188,58,1.0);
-        color: #333;
-      }
-      blockquote {
-        margin-top: 20px;
-        margin-bottom:0px;
-      }
+#welcome{
+  background: url(Forsidebilde.jpg) no-repeat;
+  background-size: cover; 
+}
+blockquote {
+  margin-top: 20px;
+  margin-bottom:0px;
+}
 
-      blockquote p {
-        font-size: 20px;
-      }
+blockquote p {
+  font-size: 20px;
+}
 
-      blockquote small {
-        color: white;
-        font-size: 16px;
-      }
+blockquote small {
+  color: white;
+  font-size: 16px;
+}
 
-      img.round {
-        border-radius: 50%;
-      }
+img.round {
+  border-radius: 50%;
+}
 
-      .animated {
-        diplay: block;
-      }
+.animated {
+  diplay: block;
+}
 
-      .bottom {
-        margin-top: 80px;
-      }
-      .nav{
-        margin-top: 100%;
+.bottom {
+  margin-top: 80px;
+}
+.nav{
+  margin-top: 100%;
 
-      }
-      .nav > li:hover{
-        background-color: transparent;
-        border-left: 3px solid #000;
-      }
-      .nav > li > a:hover{
-        background-color: transparent;
-      }
-      .nav > li {
-        border-left: 3px solid #eee;
-        color: #000;
-      }
-      .nav > li > a {
-        color: #000;
-      }
-      .nav > li.active {
-        border-left: 0;
-        border-left: 3px solid #000;
-        color: #000;
-      }
+}
+.nav > li:hover{
+  background-color: transparent;
+  border-left: 3px solid #000;
+}
+.nav > li > a:hover{
+  background-color: transparent;
+}
+.nav > li {
+  border-left: 3px solid #eee;
+  color: #000;
+}
+.nav > li > a {
+  color: #000;
+}
+.nav > li.active {
+  border-left: 0;
+  border-left: 3px solid #000;
+  color: #000;
+}
+
