@@ -103,6 +103,7 @@ footer {
 .btn:visited{
   color: #FFF;
 }
+
 .vert-button:hover{
   text-decoration: none;
   color: #000;
@@ -156,21 +157,12 @@ p.big {
   text-align: center;
 }
 
-<<<<<<< HEAD
-#why {
-  background-color: rgba(65,192,240,1.0);
-  color: white;
-}
-
-#become {
-  background-color: rgba(251,188,58,1.0);
-  color: #333;
-}
 
 #welcome{
   background: url(Forsidebilde.jpg) no-repeat;
   background-size: cover; 
 }
+
 blockquote {
   margin-top: 20px;
   margin-bottom:0px;
@@ -202,20 +194,20 @@ img.round {
 }
 .nav > li:hover{
   background-color: transparent;
-  border-left: 3px solid #000;
+  border-left: 3px solid #de920d;
 }
 .nav > li > a:hover{
   background-color: transparent;
 }
 .nav > li {
   border-left: 3px solid #eee;
-  color: #000;
+  color: #de920d;
 }
 .nav > li > a {
-  color: #000;
+  color: white;
 }
 .nav > li.active {
   border-left: 0;
-  border-left: 3px solid #000;
-  color: #000;
+  border-left: 3px solid #de920d;
+  color: #de920d;
 }
