@@ -50,7 +50,7 @@
   <section id="become">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 bigtext">
+        <div class="col-md-4 bigtext">
           <!--<h2><a href="http://www.isfit.org/hosts">Jeg vil bli vert!</a></h2>-->
           <h2><%= link_to "Jeg vil bli vert!", new_host_path, class: 'vert-button' %></h2>
           <p>Du kan registrere deg helt frem til <span class="special">4. februar 2015</span>. Å være vert er verdt det!</p>
@@ -58,8 +58,8 @@
             Send en e-post til <a class="vert-button" href="mailto:verter@isfit.org">verter@isfit.org</a></p>
             <%= link_to "Registrer deg her", new_host_path, class: "btn btn-large btn-primary" %>
           </div>
-          <div class="col-md-6">
-            <%= image_tag("workshop.jpg",:class => "graphic2")%>
+          <div class="col-md-5">
+            <%= image_tag("workshop.jpg",:class => "graphic2", :size =>"450x350")%>
           </div>
 
          <!-- <div class="col-md-3 sidebar">
