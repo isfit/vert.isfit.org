@@ -22,9 +22,14 @@
       <div class="row">
         <div class="col-md-9 forside">
           <div class="bigtext" >
-            <h1>Verdt å være vert!</h1>
-          </div>
+          <h1>Verdt å være vert!</h1>
+            <blockquote style="margin-top: 300px">
+              <p>Jeg har hatt personer fra Rwanda, USA, Israel, Tyrkia og fra det tidligere Jugoslavia boende hos meg. Det har alltid vært en artig opplevelse. Man får møte folk fra andre kulturer og høre hva de tenker om sitt hjemland, og ikke minst hva de synes om oss nordmenn.</p>
+              <small>Trygve Bragstad, 5. gang ISFiT-vert</small>
+            </blockquote>
         </div>
+        </div>
+
         <div class="col-md-3 sidebar">
           <nav role="navigation">
             <ul class="nav nav-left" id="test">
@@ -38,16 +43,6 @@
           </nav>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-9">
-          <blockquote style="margin-top: 300px; background-color:rgba(204, 204, 204, 0.6);">
-            <p>Jeg har hatt personer fra Rwanda, USA, Israel, Tyrkia og fra det tidligere Jugoslavia boende hos meg. Det har alltid vært en artig opplevelse. Man får møte folk fra andre kulturer og høre hva de tenker om sitt hjemland, og ikke minst hva de synes om oss nordmenn.</p>
-            <small>Trygve Bragstad, 5. gang ISFiT-vert</small>
-          </blockquote>
-        </div>
-      </div>
-
-
     </div>
   </section> 
 
@@ -55,7 +50,7 @@
   <section id="become">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 bigtext">
+        <div class="col-md-3 bigtext">
           <!--<h2><a href="http://www.isfit.org/hosts">Jeg vil bli vert!</a></h2>-->
           <h2><%= link_to "Jeg vil bli vert!", new_host_path, class: 'vert-button' %></h2>
           <p>Du kan registrere deg helt frem til <span class="special">4. februar 2015</span>. Å være vert er verdt det!</p>
@@ -63,8 +58,8 @@
             Send en e-post til <a class="vert-button" href="mailto:verter@isfit.org">verter@isfit.org</a></p>
             <%= link_to "Registrer deg her", new_host_path, class: "btn btn-large btn-primary" %>
           </div>
-          <div class="col-md-5">
-            <%= image_tag("workshop.jpg",:class => "graphic2", :size =>"450x350")%>
+          <div class="col-md-6">
+            <%= image_tag("workshop.jpg",:class => "graphic2")%>
           </div>
 
          <!-- <div class="col-md-3 sidebar">
@@ -101,8 +96,8 @@
           </div>>-->
 
           <div class = "bigtext">
-            <p>For å gjennomføre ISFiT trenger vi 450 sengeplasser, og vi er helt avhengig av Trondheims mange husrom og snille sjeler som vil la en student bo hos dem i 10 dager.</p>
-          </div>
+          <p>For å gjennomføre ISFiT trenger vi 450 sengeplasser, og vi er helt avhengig av Trondheims mange husrom og snille sjeler som vil la en student bo hos dem i 10 dager.</p>
+        </div>
         </div>
       </div>
     </div>
@@ -156,9 +151,9 @@
           <h1 class="center">Frokost</h1>
           <p class="bigtext">Du stiller med en enkel frokost, vi dekker alle andre måltider.</p>
         </div>
-        <div class="col-md-9">
-          <p class="big ">Deltakerne er opptatt størsteparten av dagen, med workshop på dagtid og kulturprogram på kvelden.</p>
-        </div>
+          <div class="col-md-9">
+        <p class="big"><b>Deltakerne er opptatt størsteparten av dagen, med workshop på dagtid og kulturprogram på kvelden.</b></p>
+      </div>
       </div>
     </div>
   </section>
