@@ -29,9 +29,9 @@
         nei
     <% end %></p>
     <p><b>Overnattingsmuligheter:</b>
-      <% if @host.sleeping = 0 %>
+      <% if @host.sleeping.eql? 0 %>
         Sofa
-      <% elsif @host.sex == 1 %>
+      <% elsif @host.sleeping.eql? 1 %>
         Seng
       <% else %> 
         Trenger å låne madrass
@@ -39,9 +39,9 @@
 
     <p><b>Kapasitet: </b><%= @host.capacity %> </p>
     <p><b>Kjønn:</b>
-      <% if @host.sex = 0 %>
+      <% if @host.sex.eql? 0 %>
         Ingen kjønn er foretrukket
-      <% elsif @host.sex == 1 %>
+      <% elsif @host.sex.eql? 1 %>
         Kvinne
       <% else %> 
         Mann

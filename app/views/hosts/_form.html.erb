@@ -24,7 +24,7 @@
         <%= f.radio_button :isstudent, true, label: "Ja", inline: true %>
         <% end %>
         <br>
-        <label class="control-label" for="host_city">Kan du være vert én ekstra dag?</label>
+        <label class="control-label" for="extraday">Kan du være vert én ekstra dag?</label>
         <span class="help-block">Noen deltakere har avreise én dag etter festivalen er ferdig. De vil dra hjem på dagen den 16 februar og trenger en seng å sove i fra 15 til 16. Hvis du har mulighet til å huse studentene én natt ekstra hadde det vært supert!</span>
         <%= f.form_group :extraday, hide_label: true do %> 
         <%= f.radio_button :extraday, false, label: "Nei", inline: true %>
@@ -37,7 +37,7 @@
         <%= f.radio_button :animales, true, label: "Ja", inline: true %>
         <% end %>
         <br>
-        <label class="control-label" for="host_city">Kapasitet</label>
+        <label class="control-label" for="capacity">Kapasitet</label>
         <span class="help-block">Fortell oss her hvor mange du har plass til i huset ditt</span>
         <%= f.number_field :capacity, hide_label: true%>
         <br>
