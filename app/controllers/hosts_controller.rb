@@ -30,9 +30,18 @@ class HostsController < ApplicationController
     respond_to do |format|
       if @host.save
         session[:id] = @host.id
+
+        begin
+          UserMailer.welcome_email(@host).deliver
+        rescue
+          @host.destroy
+          @host.errors.add(:email, "Ugyldig epost")
+          format.html { render :new }
+          format.json { render json: @host.errors, status: :unprocessable_entity }
+        end
+
         format.html { redirect_to @host, notice: 'Vi har registrert deg som vert med info:' }
         format.json { render :show, status: :created, location: @host }
-        UserMailer.welcome_email(@host).deliver
       else
         format.html { render :new }
         format.json { render json: @host.errors, status: :unprocessable_entity }
