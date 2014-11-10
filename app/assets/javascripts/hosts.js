@@ -25,12 +25,6 @@ ready = function () {
     return false;
   });
 
-
-
-  $('body').scrollspy({
-    offset: 250,
-    target: ''
-  });
   var active_link_clone   = $('.navbar .nav.navbar-nav .current').clone(true);
   //change_subnavbar_behaviour();
   $(window).resize(function() {
