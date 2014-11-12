@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141105165023) do
+ActiveRecord::Schema.define(version: 20141112181751) do
 
   create_table "hosts", force: true do |t|
     t.string   "firstname"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20141105165023) do
     t.boolean  "animales"
     t.integer  "sleeping"
     t.boolean  "extraday"
+    t.boolean  "deleted"
   end
 
 end
