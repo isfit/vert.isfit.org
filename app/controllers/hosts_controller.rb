@@ -26,7 +26,7 @@ class HostsController < ApplicationController
   # POST /hosts.json
   def create
     @host = Host.new(host_params)
-
+    @host.deleted = false
     respond_to do |format|
       if @host.save
         session[:id] = @host.id
