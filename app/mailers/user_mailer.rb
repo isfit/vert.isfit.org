@@ -4,7 +4,7 @@ class UserMailer < ActionMailer::Base
 
   def welcome_email(host)
   	@host = host
-  	mail(:to => host.email, :subject => "Takk for din søknad som ISFiT vert!")
+  	mail(:to => host.email, :subject => "Takk for at du vil bli ISFiT vert!")
   end
 end
 
