@@ -14,10 +14,10 @@
             <ul class="nav nav-left" id="test">
               <li class="sidebar-link"><a href="#welcome"></i><b>Verdt å være vert</b></a></li>
               <li class="sidebar-link"><a href="#become"></i><b>Bli vert</b></a></li>
-              <li class="sidebar-link"><a href="#strikk"></i><b>Strikk til ISFiT</b></a></li>
               <li class="sidebar-link"><a href="#what"></i><b>Hva er egentlig dette?</b></a></li>
               <li class="sidebar-link"><a href="#why"></i><b>Hvorfor skal jeg bli vert?</b></a></li>
               <li class="sidebar-link"><a href="#do"></i><b>Hva må jeg gjøre?</b></a></li>
+              <li class="sidebar-link"><a href="#strikk"></i><b>Strikk til ISFiT</b></a></li>
               <li class="sidebar-link"><p href="#btn_side"></i><b> <%= link_to "Registrer deg her", new_host_path, class: "btn btn-primary" %></b></p></li>
             </ul>
           </nav>
@@ -54,95 +54,113 @@
       </div>
     </section>
 
+
+
+    <section id="what">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class = "bigtext">
+              <h1>Hva er egentlig dette?</h1>
+              <p>ISFiT arrangeres annethvert år, og hver festival har et tema av sosial og politisk karakter med internasjonal relevans. Teamet for ISFiT 2015 er korrupsjon, og festivalen finner sted i Trondheim 5.-15. februar. Her møtes over 450 studenter fra hele verden for å diskutere temaet i 17 ulike workshoper, og for å ta del i festivalens kulturprogram. ISFiT er en ideell organisasjon og arrangeres ved hjelp av innsatsen til over 400 engasjerte Trondheimsstudenter.</p>
+            </div>
+            <div style="text-align: center;">
+              <iframe width="420" height="315" src="//www.youtube.com/embed/fNVuKXrFItI" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class = "bigtext">
+              <p>For å gjennomføre ISFiT trenger vi 450 sengeplasser, og vi er helt avhengig av Trondheims mange husrom og snille sjeler som vil la en student bo hos dem i 10 dager.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section id="why">
+      <div class="container">
+        <h1 class="big">
+          Hvorfor skal jeg bli vert?
+        </h1>
+        <div class="row">
+          <div class="col-md-3 bigtext">
+            <%= image_tag("kultur.jpg", width: '100%', class: 'visible-lg')%>
+            <h1 class="center">Møt en ny kultur</h1>
+            <p class="center">I februar samler vi hele verden i Trondheim, dette er din sjanse til å oppleve noe annerledes.</p>
+          </div>
+          <div class="col-md-3 bigtext">
+            <%= image_tag("venn.jpg", width: '100%', class: 'visible-lg')%>
+            <h1 class="center">Få en venn for livet</h1>
+            <p class="center">Her er mulighetene mange til å stifte unike vennskap. Kanskje får du en framtidig statsleder sovende på din sofa?</p>
+          </div>
+          <div class="col-md-3 bigtext">
+            <%= image_tag("eventyr.jpg", width: '100%', class: 'visible-lg')%>
+            <h1 class="center">Vinterens eventyr</h1>
+            <p class="center">Oppleve en februar du aldri vil glemme, og hjelp oss gjøre ISFiT mulig!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="do">
+      <div class="container">
+        <h1 class="big">
+          Hva må jeg gjøre?
+        </h1>
+        <div class="row">
+          <div class="col-md-4 center bigtext ">
+            <%= image_tag("Sengen.gif",:class => "round", width: '100%', class: 'visible-lg')%>
+            <h1 class="center">Seng</h1>
+            <p class="bigtext">Alt du trenger er en ekstra seng, sofa eller kun gulvplass, så stiller vi med madrassen(e).</p>
+          </div>
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-4 center bigtext ">
+            <%= image_tag("Frokost.gif",:class => "round", width: '100%', class: 'visible-lg')%>
+            <h1 class="center">Frokost</h1>
+            <p class="bigtext">Du stiller med en enkel frokost, vi dekker alle andre måltider.</p>
+          </div>
+          <div class="col-md-9">
+            <p class="big ">Deltakerne er opptatt mesteparten av dagen, med workshop på dagtid og kulturprogram på kvelden.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="strikk">
       <div class="container">
         <div class="row">
           <h1 class="big">Varm en deltaker – strikk til ISFiT 2015!</h1>
-           </div>
-          <div class="row">
-        <div class="col-md-4 bigtext">
-          <p>ISFiT arrangeres annethvert år, og hver festival har et tema av sosial og politisk karakter med internasjonal relevans. Teamet for ISFiT 2015 er korrupsjon, og festivalen finner sted i Trondheim 5.-15. februar. Her møtes over 450 studenter fra hele verden for å diskutere temaet i 17 ulike workshoper, og for å ta del i festivalens kulturprogram. ISFiT er en ideell organisasjon og arrangeres ved hjelp av innsatsen til over 400 engasjerte Trondheimsstudenter.</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 bigtext">
+            <p>ISFiT er en ideell organisasjon og arrangeres ved hjelp av innsatsen til over 400 engasjerte Trondheimsstudenter. I den anledning har vi designet strikkemønster som en kan strikke, og etterhvert levere inn til oss. Finn fram pinner og garn! Aktiviser og rekrutter hele familien fra oldemor til pusekatt! Sammen skal vi klare å strikke nok til å holde alle varme, og gi hver og en et håndfast minne for livet.
+            </p>
           </div>
           <div class="col-md-5 visible-lg">
             <%= image_tag("strikk.jpg", width: '100%')%>
           </div>
-           </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <p class="big">På facebook kan man bli medlem i en gruppe for å få mer informasjon, hjelp med strikking eller for å dele sine bidrag.</p>
+            <%= link_to "Til facebookgruppen", "https://www.facebook.com/groups/863800783650227/?fref=ts", class: "btn btn-primary" %>
+          </div>
+          <div class="col-md-5">
+
+            <p class="big">Strikkeoppskriftene kan du finne her:</p>
+            <%= link_to "Votter", "http://www.ravelry.com/patterns/library/isfitstrikk-votter-mittens", class: "btn btn-primary" %>
+            <%= link_to "Sokker", "http://www.ravelry.com/patterns/library/isfitstrikk-sokker-socks", class: "btn btn-primary" %>
+            <%= link_to "Lue", "http://www.ravelry.com/patterns/library/isfitstrikk-lue-hat", class: "btn btn-primary" %>
+          </div>
+        </div>
       </div>
     </section>
 
-      <section id="what">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9">
-              <div class = "bigtext">
-                <h1>Hva er egentlig dette?</h1>
-                <p>ISFiT arrangeres annethvert år, og hver festival har et tema av sosial og politisk karakter med internasjonal relevans. Teamet for ISFiT 2015 er korrupsjon, og festivalen finner sted i Trondheim 5.-15. februar. Her møtes over 450 studenter fra hele verden for å diskutere temaet i 17 ulike workshoper, og for å ta del i festivalens kulturprogram. ISFiT er en ideell organisasjon og arrangeres ved hjelp av innsatsen til over 400 engasjerte Trondheimsstudenter.</p>
-              </div>
-              <div style="text-align: center;">
-                <iframe width="420" height="315" src="//www.youtube.com/embed/fNVuKXrFItI" frameborder="0" allowfullscreen></iframe>
-              </div>
 
-              <div class = "bigtext">
-                <p>For å gjennomføre ISFiT trenger vi 450 sengeplasser, og vi er helt avhengig av Trondheims mange husrom og snille sjeler som vil la en student bo hos dem i 10 dager.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
-
-
-      <section id="why">
-        <div class="container">
-          <h1 class="big">
-            Hvorfor skal jeg bli vert?
-          </h1>
-          <div class="row">
-            <div class="col-md-3 bigtext">
-              <%= image_tag("kultur.jpg", width: '100%', class: 'visible-lg')%>
-              <h1 class="center">Møt en ny kultur</h1>
-              <p class="center">I februar samler vi hele verden i Trondheim, dette er din sjanse til å oppleve noe annerledes.</p>
-            </div>
-            <div class="col-md-3 bigtext">
-              <%= image_tag("venn.jpg", width: '100%', class: 'visible-lg')%>
-              <h1 class="center">Få en venn for livet</h1>
-              <p class="center">Her er mulighetene mange til å stifte unike vennskap. Kanskje får du en framtidig statsleder sovende på din sofa?</p>
-            </div>
-            <div class="col-md-3 bigtext">
-              <%= image_tag("eventyr.jpg", width: '100%', class: 'visible-lg')%>
-
-              <h1 class="center">Vinterens eventyr</h1>
-              <p class="center">Oppleve en februar du aldri vil glemme, og hjelp oss gjøre ISFiT mulig!</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="do">
-        <div class="container">
-          <h1 class="big">
-            Hva må jeg gjøre?
-          </h1>
-          <div class="row">
-            <div class="col-md-4 center bigtext ">
-              <%= image_tag("Sengen.gif",:class => "round", width: '100%', class: 'visible-lg')%>
-              <h1 class="center">Seng</h1>
-              <p class="bigtext">Alt du trenger er en ekstra seng, sofa eller kun gulvplass, så stiller vi med madrassen(e).</p>
-            </div>
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-4 center bigtext ">
-              <%= image_tag("Frokost.gif",:class => "round", width: '100%', class: 'visible-lg')%>
-              <h1 class="center">Frokost</h1>
-              <p class="bigtext">Du stiller med en enkel frokost, vi dekker alle andre måltider.</p>
-            </div>
-            <div class="col-md-9">
-              <p class="big ">Deltakerne er opptatt størsteparten av dagen, med workshop på dagtid og kulturprogram på kvelden.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div> <!-- End content wrapper -->
+  </div> <!-- End content wrapper -->
 
