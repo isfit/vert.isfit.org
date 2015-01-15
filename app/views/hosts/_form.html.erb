@@ -31,6 +31,12 @@
         <%= f.radio_button :extraday, true, label: "Ja", checked: true, inline: true %>
         <% end %>
         <br>
+        <span class="help-block">Noen deltakere ankommer Trondheim èn dag tidligere, altså 4.februar. Har du mulighet til å huse studenten(e) fra 4.februar? </span>
+        <%= f.form_group :Onedayearly, hide_label: true do %> 
+        <%= f.radio_button :Onedayearly, false, label: "Nei", inline: true %>
+        <%= f.radio_button :Onedayearly, true, label: "Ja", checked: true, inline: true %>
+        <% end %>
+        <br>
         <%= f.form_group :animales, label: { text: "Har du dyr?"  } do %> 
         <br>
         <%= f.radio_button :animales, false, label: "Nei", checked: true, inline: true %>
@@ -66,7 +72,7 @@
 
 
     <div class='col-md-7'>
-        <div class='forminfo bigtext'>
+        <div class='forminfo bigtext2'>
             <h1>Dette må du vite</h1>
             <p>Så bra du har lyst til å være vert .Det å være vert vil si at man har en deltaker av den internasjonale studentfestivalen i Trondheim boende hjemme hos seg selv under festivalen, som varer fra 5. feb til 15.feb. Deltakerne får busskort fra oss, så transport trenger du ikke stille med. </p>
             <p>Dette trenger du for å være vert:</p>
