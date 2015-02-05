@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources(:hosts, except: [:edit,:update,:destroy])
+  resources(:hosts, except: [:edit,:update,:destroy, :create])
 
   root 'hosts#index'
 
