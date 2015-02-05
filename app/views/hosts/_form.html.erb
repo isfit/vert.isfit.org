@@ -1,89 +1,19 @@
 <div class ="container">
     <div class='row newhost'>
 
-      <div class='col-md-4'>
+      <div class='col-md-3 padding-cheat'>
 
         <%= bootstrap_form_for(@host) do |f| %>
-        <%= f.text_field :firstname, label: "Fornavn" %> 
-        <%= f.text_field :lastname, label: "Etternavn" %>
-        <%= f.text_field :email, label: "Epost" %>
-        <%= f.text_field :phone, label: "Telefonnummer" %>
-        <%= f.text_field :address, label: "Adresse" %>
-        <%= f.text_field :zipcode, label: "Postnr" %>
-        <%= f.text_field :city, label: "By" %>
 
-        <%= f.form_group :beenhost, label: { text: "Har du vært vert før?"  } do %> 
-        <br>
-        <%= f.radio_button :beenhost, false, label: "Nei", checked: true, inline: true %>
-        <%= f.radio_button :beenhost, true, label: "Ja", inline: true %>
-        <% end %>
-        <br>
-        <%= f.form_group :isstudent, label: { text: "Er du student?"  } do %> 
-        <br>
-        <%= f.radio_button :isstudent, false, label: "Nei", checked: true, inline: true %>
-        <%= f.radio_button :isstudent, true, label: "Ja", inline: true %>
-        <% end %>
-        <br>
-        <label class="control-label" for="extraday">Kan du være vert én ekstra dag?</label>
-        <span class="help-block">Noen deltakere har avreise én dag etter festivalen er ferdig. De vil dra hjem på dagen den 16 februar og trenger en seng å sove i fra 15 til 16. Hvis du har mulighet til å huse studentene én natt ekstra hadde det vært supert!</span>
-        <%= f.form_group :extraday, hide_label: true do %> 
-        <%= f.radio_button :extraday, false, label: "Nei", inline: true %>
-        <%= f.radio_button :extraday, true, label: "Ja", checked: true, inline: true %>
-        <% end %>
-        <br>
-        <span class="help-block">Noen deltakere ankommer Trondheim èn dag tidligere, altså 4.februar. Har du mulighet til å huse studenten(e) fra 4.februar? </span>
-        <%= f.form_group :Onedayearly, hide_label: true do %> 
-        <%= f.radio_button :Onedayearly, false, label: "Nei", inline: true %>
-        <%= f.radio_button :Onedayearly, true, label: "Ja", checked: true, inline: true %>
-        <% end %>
-        <br>
-        <%= f.form_group :animales, label: { text: "Har du dyr?"  } do %> 
-        <br>
-        <%= f.radio_button :animales, false, label: "Nei", checked: true, inline: true %>
-        <%= f.radio_button :animales, true, label: "Ja", inline: true %>
-        <% end %>
-        <br>
-        <label class="control-label" for="capacity">Kapasitet</label>
-        <span class="help-block">Fortell oss her hvor mange du har plass til i huset ditt</span>
-        <%= f.number_field :capacity, hide_label: true%>
-        <br>
-        <%= f.form_group :sleeping, label: { text: "Hvilke overnattingsmuligheter tilbyr du?"  } do %> 
-        <br>
-        <%= f.radio_button :sleeping, 0, label: "Sofa", checked: true, inline: true %>
-        <%= f.radio_button :sleeping, 1, label: "Seng", inline: true %>
-        <%= f.radio_button :sleeping, 2, label: "Trenger å låne madrass", inline: true %>
-        <% end %>
-        <br>
-
-
-        <%= f.form_group :sex, label: { text: "Foretrukket kjønn"  } do %> 
-        <br>
-        <%= f.radio_button :sex, 0, label: "Ingen preferanser", checked: true, inline: true %>
-        <%= f.radio_button :sex, 1, label: "Kvinne", inline: true %>
-        <%= f.radio_button :sex, 2, label: "Mann", inline: true %>
-        <% end %>
-        <br>
-        <label class="control-label" for="host_city">Kommentarer</label>
-        <span class="help-block">Har du lyst til at den du huser skal ha et spesiellt språk eller har du noe annet å opplyse om? Skriv det her!</span>
-        <%= f.text_area :comments, hide_label: true%>
-        <%= f.submit "Send inn!" %>
         <% end %>
     </div>
 
 
     <div class='col-md-7'>
         <div class='forminfo bigtext2'>
-            <h1>Dette må du vite</h1>
-            <p>Så bra du har lyst til å være vert .Det å være vert vil si at man har en deltaker av den internasjonale studentfestivalen i Trondheim boende hjemme hos seg selv under festivalen, som varer fra 5. feb til 15.feb. Deltakerne får busskort fra oss, så transport trenger du ikke stille med. </p>
-            <p>Dette trenger du for å være vert:</p>
-            <ul>
-              <li><h4>En oppreid seng</h4></li>
-              <li><h4>Frokost</h4></li>
-              <li><h4>Middag den 5. februar</h4></li>
-              <li><h4>Godt humør</h4></li>
-          </ul>
-          <p>Det er bindende påmelding og man får informasjon nærmere festivalen.<br>
-              Hvis du har noen spørsmål så er det bare å ta kontakt på verter@isfit.org</p>
+            <h1>Vi har nok verter</h1>
+            <p>Så bra du har lyst til å være vert. Vi er nå fylt opp, og har derfor ikke behov for flere verter.</p>
+            <p>Om du er vert allerede, og har noen spørsmål så er det bare å ta kontakt på verter@isfit.org</p>
               <p><%= link_to 'Tilbake til forsiden', root_path, class: 'btn btn-large btn-primary' %></p>
       </div>
       </div>  

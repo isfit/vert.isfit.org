@@ -24,30 +24,6 @@ class HostsController < ApplicationController
 
   # POST /hosts
   # POST /hosts.json
-  def create
-    @host = Host.new(host_params)
-    @host.deleted = false
-    respond_to do |format|
-      if @host.save
-        session[:id] = @host.id
-
-        begin
-          UserMailer.welcome_email(@host).deliver
-        rescue
-          @host.destroy
-          @host.errors.add(:email, "Ugyldig epost")
-          format.html { render :new }
-          format.json { render json: @host.errors, status: :unprocessable_entity }
-        end
-
-        format.html { redirect_to @host, notice: 'Vi har registrert deg som vert med info:' }
-        format.json { render :show, status: :created, location: @host }
-      else
-        format.html { render :new }
-        format.json { render json: @host.errors, status: :unprocessable_entity }
-      end
-    end
-  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
